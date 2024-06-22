@@ -8,10 +8,25 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <!-- Custom CSS -->
 <style>
-/* Add custom styles here */
+/* Dark theme styles */
+body {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+/* Custom styles */
+.logo-img {
+  height: 30px; /* Adjust size of logos */
+  margin-right: 12px;
+}
+.project-card {
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
 </style>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans leading-normal tracking-normal">
+<body class="font-sans leading-normal tracking-normal">
 <!-- Navbar -->
 <nav class="bg-blue-600 p-4">
 <div class="container mx-auto flex justify-between items-center">
@@ -42,9 +57,9 @@
 <h2 class="text-3xl font-bold mb-4">What I'm Working On 🚀</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 <!-- Example Project Card -->
-<div class="bg-white shadow-md rounded-lg p-4 project-card">
+<div class="bg-gray-800 shadow-md rounded-lg p-4 project-card">
 <h3 class="text-xl font-bold mb-2">Sentiment Analysis Model</h3>
-<p class="text-gray-700 mb-2">Building a sentiment analysis model using deep learning techniques.</p>
+<p class="text-gray-300 mb-2">Building a sentiment analysis model using deep learning techniques.</p>
 <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">Learn More</button>
 </div>
 <!-- Add more project cards as needed -->
@@ -69,7 +84,7 @@
 </section>
 </div>
 <!-- Footer -->
-<footer class="bg-gray-800 text-white py-4">
+<footer class="bg-gray-700 text-white py-4">
 <div class="container mx-auto text-center">
 <p>&copy; 2024 Leela Ramakrishna. All rights reserved.</p>
 </div>
